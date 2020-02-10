@@ -23,14 +23,14 @@ public class SpeChecker {
     private static ActivityManager manager;
     private static String packageName, signature;
 
-    public SpeChecker(Context context, String packageName, String signature) {
+    public SpeChecker(Context context) {
         this.context = context;
-        this.packageName = packageName;
-        this.signature = signature;
         crcCheck();
     }
 
-    private boolean crcCheck() {
+    private boolean SpeChecker(String packageName, String signature) {
+        this.packageName = packageName;
+        this.signature = signature;
         boolean hasil = false;
         manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         if (new DeviceHelper().isDeviceRooted(context) ||
