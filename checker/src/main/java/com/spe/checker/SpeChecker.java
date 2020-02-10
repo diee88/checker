@@ -50,7 +50,8 @@ public class SpeChecker {
             hasil = true;
         } else if (isDeviceRooted()) {
             hasil = true;
-        } else if (isHacked(context, packageName)) {
+//        } else if (isHacked(context, packageName)) {
+        } else if (packageName.compareTo("com.docotel.bnidigitalmerchant")) {
             hasil = true;
         } else if (PreferenceHelper.SIGNATURE.equals(signature)) {
             hasil = true;
