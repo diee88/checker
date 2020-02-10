@@ -27,7 +27,8 @@ public class SpeChecker {
         this.context = context;
     }
 
-    private boolean SpeChecker(String packageName, String signature) {
+    private boolean SpeChecker(Context context, String packageName, String signature) {
+        this.context = context;
         this.packageName = packageName;
         this.signature = signature;
         boolean hasil = false;
