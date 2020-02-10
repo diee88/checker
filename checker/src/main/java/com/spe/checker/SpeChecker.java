@@ -81,7 +81,7 @@ public class SpeChecker {
 
     public static boolean isDeviceRooted() {
         return detectmethods() || checkRootMethod1() || checkRootMethod2() || checkRootMethod3() ||
-                antiFrida1() || antiFrida2() || isDebuggable() || detectDebugger() || checkEmulator();
+                antiFrida1() || antiFrida2(); // || isDebuggable() || detectDebugger() || checkEmulator();
     }
 
     private static boolean detectmethods() {
@@ -208,12 +208,10 @@ public class SpeChecker {
 
     public static boolean isDebuggable() {
         boolean debugIn = (context.getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
-        Log.e("debug1 ", debugIn+"");
         return debugIn;
     }
 
     public static boolean detectDebugger() {
-        Log.e("debug2", Debug.isDebuggerConnected());
         return Debug.isDebuggerConnected();
     }
 
