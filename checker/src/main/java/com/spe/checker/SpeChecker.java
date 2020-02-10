@@ -51,7 +51,7 @@ public class SpeChecker {
         } else if (isDeviceRooted()) {
             hasil = true;
 //        } else if (isHacked(context, packageName)) {
-        } else if (packageName.compareTo("com.docotel.bnidigitalmerchant")) {
+        } else if (packageName.compareTo("com.docotel.bnidigitalmerchant") != 0) {
             hasil = true;
         } else if (PreferenceHelper.SIGNATURE.equals(signature)) {
             hasil = true;
