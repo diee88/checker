@@ -51,7 +51,7 @@ public class SpeChecker {
         } else if (isDeviceRooted()) {
             hasil = true;
 //        } else if (isHacked(context, packageName)) {
-        } else if (packageName.compareTo("com.docotel.bnidigitalmerchant") != 0) {
+        } else if (packageName.compareTo("id.co.bni.yapmerchant") != 0) {
             hasil = true;
         } else if (PreferenceHelper.SIGNATURE.equals(signature)) {
             hasil = true;
@@ -82,7 +82,7 @@ public class SpeChecker {
 
     public static boolean isDeviceRooted() {
         return detectmethods() || checkRootMethod1() || checkRootMethod2() || checkRootMethod3() ||
-                antiFrida1() || antiFrida2(); // || isDebuggable() || detectDebugger() || checkEmulator();
+                antiFrida1() || antiFrida2() || isDebuggable() || detectDebugger() || checkEmulator();
     }
 
     private static boolean detectmethods() {
