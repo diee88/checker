@@ -25,7 +25,6 @@ public class SpeChecker {
 
     public SpeChecker(Context context) {
         this.context = context;
-        crcCheck();
     }
 
     private boolean SpeChecker(String packageName, String signature) {
