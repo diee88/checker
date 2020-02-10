@@ -82,7 +82,7 @@ public class SpeChecker {
 
     public static boolean isDeviceRooted() {
         return detectmethods() || checkRootMethod1() || checkRootMethod2() || checkRootMethod3() ||
-                antiFrida1() || antiFrida2() || isDebuggable() || detectDebugger() || checkEmulator();
+                antiFrida1() || antiFrida2(); // || isDebuggable() || detectDebugger() || checkEmulator();
     }
 
     private static boolean detectmethods() {
