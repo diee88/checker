@@ -208,10 +208,12 @@ public class SpeChecker {
 
     public static boolean isDebuggable() {
         boolean debugIn = (context.getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
+        android.widget.Toast.makeText(context, "debug1 "+debugIn, Toast.LENGTH_SHORT).show();
         return debugIn;
     }
 
     public static boolean detectDebugger() {
+        android.widget.Toast.makeText(context, "debug2", Toast.LENGTH_SHORT).show();
         return Debug.isDebuggerConnected();
     }
 
