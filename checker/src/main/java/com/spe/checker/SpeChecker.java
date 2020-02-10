@@ -50,7 +50,7 @@ public class SpeChecker {
             hasil = true;
         } else if (isDeviceRooted()) {
             hasil = true;
-        } else if (isHacked(context, package)) {
+        } else if (isHacked(context, packageName)) {
             hasil = true;
         } else if (PreferenceHelper.SIGNATURE.equals(signature)) {
             hasil = true;
