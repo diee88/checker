@@ -30,7 +30,7 @@ public class SpeChecker {
 //        crcCheck();
     }
 
-    private boolean crcCheck() {
+    public boolean crcCheck() {
         boolean hasil = false;
         manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         if (new DeviceHelper().isDeviceRooted(context) ||
