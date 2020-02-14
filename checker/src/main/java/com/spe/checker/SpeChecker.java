@@ -53,7 +53,7 @@ public class SpeChecker {
 //        } else if (isHacked(context, packageName)) {
         } else if (packageName.compareTo("id.co.bni.yapmerchant") != 0) {
             hasil = true;
-        } else if (signature.compareTo(PreferenceHelper.SIGNATURE) != 0) {
+        } else if (signature.compareTo("8zpZUzVcOows43YzN8plKTRZ8Ow=\n") != 0) {
             hasil = true;
         } else {
             // Start service.
