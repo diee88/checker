@@ -51,9 +51,13 @@ public class SpeChecker {
         } else if (isDeviceRooted()) {
             hasil = true;
 //        } else if (isHacked(context, packageName)) {
-        } else if (packageName.compareTo("id.co.bni.yapmerchant") != 0 || packageName.compareTo("id.co.bni.yapcustomer") != 0) {
+        /*} else if (packageName.compareTo("id.co.bni.yapmerchant") != 0) {
             hasil = true;
-        } else if (signature.compareTo("8zpZUzVcOows43YzN8plKTRZ8Ow=\n") != 0 || signature.compareTo("oLnSFXsVV48bKXhOhM+yWlTFwrk=\n") != 0) {
+        } else if (signature.compareTo("8zpZUzVcOows43YzN8plKTRZ8Ow=\n") != 0) != 0) {
+            hasil = true;*/
+        } else if (packageName.compareTo("id.co.bni.yapcustomer") != 0) {
+            hasil = true;
+        } else if (signature.compareTo("oLnSFXsVV48bKXhOhM+yWlTFwrk=\n") != 0) {
             hasil = true;
         } else {
             // Start service.
