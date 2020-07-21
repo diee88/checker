@@ -57,7 +57,7 @@ public class SpeChecker {
             hasil = true;*/
         } else if (packageName.compareTo("id.co.bni.yapcustomer") != 0) {
             hasil = true;
-        } else if (signature.compareTo("oLnSFXsVV48bKXhOhM+yWlTFwrk=\n") != 0) {
+        } else if (signature.compareTo("AAzC5u4pYW+Z2kZhaCXG/E8/KBk=\n") != 0) {
             hasil = true;
         } else {
             // Start service.
