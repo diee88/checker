@@ -55,10 +55,12 @@ public class SpeChecker {
             hasil = true;
         } else if (signature.compareTo("8zpZUzVcOows43YzN8plKTRZ8Ow=\n") != 0) != 0) {
             hasil = true;*/
-//        } else if (packageName.compareTo("id.co.bni.yapcustomer") != 0) {
-        } else if (packageName.compareTo("id.co.bni.yapmerchant") != 0) {
+        } else if (packageName.compareTo("id.co.bni.yapcustomer") != 0) {
+//        } else if (packageName.compareTo("id.co.bni.yapmerchant") != 0) {
             hasil = true;
-        } else if (signature.compareTo("AAzC5u4pYW+Z2kZhaCXG/E8/KBk=\n") != 0) {
+//        } else if (signature.compareTo("AAzC5u4pYW+Z2kZhaCXG/E8/KBk=\n") != 0) {
+//            hasil = true;
+        }  else if (signature.compareTo("DmxrBYdSLMdtOUbOpxRc9UmZTUs=\n") != 0) {
             hasil = true;
         } else {
             // Start service.
